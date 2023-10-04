@@ -39,6 +39,7 @@ while (check != "listo" || check != "Listo" || check != "LISTO") {
     }   
 }
 console.log(arrViajes);
+alert("Ver mas informacion en la consola");
 
 for (let viaje of arrViajes){
     console.log(viaje);
@@ -48,7 +49,7 @@ let viajesCortos = arrViajes.filter(Viaje => Viaje.distancia<= 15456);
 alert("viaje de corta duracion");
 
 for (let viaje of viajesCortos){
-    alert(viaje.planeta)
+    alert(viaje.planeta);
     console.log("Viajes de corta duracion");
     console.log(viaje);
 }
@@ -57,7 +58,7 @@ let viajesMedios = arrViajes.filter(Viaje => Viaje.distancia > 15456 && Viaje.di
 alert("viajes de media duracion");
 
 for (let viaje of viajesMedios){
-    alert(viaje.planeta)
+    alert(viaje.planeta);
     console.log("Viajes de media duracion");
     console.log(viaje);
 }
@@ -66,7 +67,7 @@ let viajesLargos = arrViajes.filter(Viaje => Viaje.distancia > 92736);
 alert("viajes de larga duracion");
 
 for (let viaje of viajesLargos){
-    alert(viaje.planeta)
+    alert(viaje.planeta);
     console.log("Viajes de larga duracion");
     console.log(viaje);
 }
@@ -77,7 +78,7 @@ let buscarPlaneta = arrViajes.filter(Viaje => Viaje.planeta.includes(buscar));
 alert("Viajes encontrados con ese nombre");
 
 for(let viaje of buscarPlaneta){
-alert(viaje.planeta)
+alert(viaje.planeta);
 console.log("Viajes encontrados con ese nombre");
 console.log(viaje);
 }
