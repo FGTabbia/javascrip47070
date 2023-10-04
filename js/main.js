@@ -39,11 +39,12 @@ while (check != "listo" || check != "Listo" || check != "LISTO") {
     }   
 }
 console.log(arrViajes);
-alert("Ver mas informacion en la consola");
 
 for (let viaje of arrViajes){
     console.log(viaje);
 }
+
+alert("Ver mas informacion en la consola");
 
 let viajesCortos = arrViajes.filter(Viaje => Viaje.distancia<= 15456);
 alert("viaje de corta duracion");
